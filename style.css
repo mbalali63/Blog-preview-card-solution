@@ -1,0 +1,165 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+body{
+    width:100vw;    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;    
+    background-color: hsl(47,88%,63%);    
+    font-family: 'Figtree';
+    font-weight: 500;
+}
+
+#main-container{
+    width:85%;
+    margin:150px auto;
+    padding:20px;
+    border-radius: 5%;    
+    background-color: hsl(0,0%,100%);
+    box-shadow: 10px 10px 0px rgb(0,0,0,1);
+}
+
+#image-container{
+    width: 100%;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+#text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:15px;
+    margin-top:20px;
+}
+
+.tag-box{        
+    padding:5px 8px;
+    background-color: hsl(47,88%,63%);
+    border:none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.publish-date{
+    font-size: 13px;
+}
+
+.publish-title{
+    font-size: 18px;
+}
+
+.publish-text{
+    font-size: 13px;
+    color:hsl(0,0%,50%);
+}
+
+
+
+#id-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:10px;
+    margin-top: 30px;
+}
+#id-image-container{
+    width: 30px;
+    height: 30px;    
+}
+
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    font-size: 11px; text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:450px){
+    
+    #main-container{
+        width:70%;
+    }   
+}
+@media screen and (min-width:600px){
+    
+    #main-container{
+        width:50%;
+    }   
+}
+
+
+@media screen and (min-width:1000px){
+    
+    #main-container{
+        width:40%;
+    }   
+}
+
+
+@media screen and (min-width:1440px){
+    
+    #main-container{
+        width:30%;
+        margin:150px auto;
+        padding:20px;
+        border-radius: 5%;    
+    }
+    
+    
+    #text-container{
+        gap:15px;
+        margin-top:20px;
+    }
+    
+    .tag-box{        
+        padding:9px 13px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+    
+    .publish-date{
+        font-size: 13px;
+    }
+    
+    .publish-title{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    .publish-text{
+        font-size: 15px;
+    }
+    
+    #id-container{
+        gap:10px;
+        margin-top: 30px;
+    }
+    #id-image-container{
+        width: 30px;
+        height: 30px;    
+    }
+    
+    
+ 
+       
+}
